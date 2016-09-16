@@ -8,6 +8,9 @@
 * [Development branch API browser](http://dev-api.fuelphp.com)
 * [Support Forum](http://fuelphp.com/forums) for comments, discussion and community support
 
+### デモURL(heroku)
+[デモURL](http://poker-fuel.herokuapp.com/hand)
+
 ### テスト用リポジトリ
 
 入力フォームにてポーカーの役を成立する文字列数値を入れることにより、役を返す
