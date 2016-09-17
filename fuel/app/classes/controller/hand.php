@@ -27,7 +27,12 @@ class Controller_Hand extends Controller_Template
     $this->template->title = 'ポーカー';
     $validation = $this->validation_input();
     if ($validation->error()) {
-      $this->template->content = View::forge('hand/index', $validation->error());
+      $error = array();
+      foreach ($validation->error() as $key => $value) {
+        $error[$key] = $value->get_message();
+      }
+      $error['poker'] = '';
+      $this->template->content = View::forge('hand/index', $error);
       return;
     }
 
