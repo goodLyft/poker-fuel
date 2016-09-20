@@ -1,7 +1,7 @@
 <?php
 namespace Validation;
 
-class PokerValidation extends \Validation\Util\CoreValidation
+class Pokervalidation extends \Validation\Util\CoreValidation
 {
 
   public static function validation()

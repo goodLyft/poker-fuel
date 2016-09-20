@@ -1,6 +1,6 @@
 <?php
-use \Model\Service\PokerService;
-use \Validation\PokerValidation;
+use Model\Service\Pokerservice;
+use Validation\Pokervalidation;
 
 class Controller_Hand extends Controller_Template
 {
@@ -23,7 +23,7 @@ class Controller_Hand extends Controller_Template
 
   public function action_send()
   {
-    $errorList = PokerValidation::validation();
+    $errorList = Pokervalidation::validation();
     if (count($errorList) > 0) {
       $this->template->content = View::forge('hand/index', $errorList);
       return;
